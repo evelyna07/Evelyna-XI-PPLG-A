@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        top : 0;
+        background-color: rgb(209, 241, 209);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .all {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .box {
+        height: 300px;
+        width: 280px;
+        background-color: rgb(124, 193, 124);
+        border-radius: 5px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .box form {
+        margin-top: 60px;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        margin: 10px;
+    }
+
+    button:hover {
+        background-color: white;
+        transition-duration: 1s;
+    }
+
+    .tombol {
+        padding: 15px;
+    }
+
+    input {
+        width: 180px;
+        height: 30px;
+        border-radius: 5px;
+        margin-top: 15px;
+        border: none;
+        background-color: white;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .logo img {
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+        margin-top: 30px;
+
+    }
+    
+
+</style>
+<body>
+    <div class="all">
+        <div class="logo">
+            <img src="banner.jpg" alt="img">
+        </div>
+
+        <h3>selamat datang di sushi today</h3>
+
+        <div class="box">
+            <form action="" method="POST">
+                <div>
+                    <label for="username"></label>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </div>
+                <div>
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <div class="tombol">
+                        <button type="submit">Register</button>
+                        <button type="submit">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Transaksi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+        body {
+            background-color: rgb(209, 241, 209);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            height: 50px;
+            background-color: rgb(124, 193, 124);;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+        }
+
+        .navbar li {
+            float: left;
+            margin: 10px;
+        }
+
+        .navbar2 li {
+            float: right;
+        }
+
+        .container {
+            height: 330px;
+            background-color: rgb(124, 193, 124);;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        input {
+            border: none;
+            height: 30px;
+            width: 200px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .empty2 {
+            float: right;
+            margin-top: -180px;
+            margin-right: 70px;
+        }
+
+        .iyaa {
+            float: right;
+            margin-top: -300px;
+            margin-right: 80px;
+        }
+
+        .footer {
+            height: 40px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 40px;
+            background-color: rgb(124, 193, 124);
+            margin-top: 50px;
+        }
+
+        button {
+            width: 120px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: rgb(124, 193, 124);;
+            border-style: none;
+        }
+
+        .empty {
+            margin-top: 40px;
+        }
+
+        .hitung {
+            margin-left: 240px;
+            margin-top: 30px;
+        }
+
+        .simpan {
+            margin-left: 240px;
+            margin-top: 30px;
+        }
+
+        .total {
+            background-color: rgb(209, 241, 209);
+            width: 150px;
+            height: 40px;
+            margin-left: 900px;
+        } 
+
+
+    </style>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Transaksi</li>
+                <div class="navbar2">
+                    <ul>
+                        <li>Logout</li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="box-utama">
+                <form action="" method="POST">
+                <table>
+                    <tr>
+                        <td width="150">No Transaksi</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Transaksi</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Customer</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Pilihan Paket</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Harga Paket</td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </form>
+
+            <button class="total" type="submit">Hitung Total Harga</button></td>
+
+                <div class="iyaa">
+                    <form action="" method="POST">
+                        <table>
+                            <tr>
+                                <td><input type="radio" name="radio" id="">Tidak Ada Tambahan</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="radio" id="">Tambahan packing makanan extra</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="radio" id="">Tambahan saus wasabi</td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+        <div class="empty">
+            <form action="" method="POST">
+                <table>
+                    <tr>
+                        <td width="150">Total Harga</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Pembayaran</td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>   
+            </form>
+
+            <button class="hitung" type="submit">Hitung Kembalian</button>
+
+        </div>
+            <div class="empty2">
+                <div class="containerr">
+                    <h3>Pembayaran berhasil</h3>
+                            
+                    <form action="" method="POST">
+                        <table>
+                            <tr>
+                                <td width="150">Kembalian</td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </table>
+                    </form>
+
+                    <button class="simpan" type="submit">Simpan Transaksi</button>
+                </div>
+            </div>
+
+        <div class="footer">
+            <p>@copyright evelyna</p>
+        </div>
+    </body>
+</html>
